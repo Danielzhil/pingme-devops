@@ -2,27 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone') {
-            steps {
-                echo 'Cloning repository...'
-            }
-        }
-
         stage('Build') {
             steps {
-                echo 'Building the project...'
+                echo '✅ Building the project...'
             }
         }
-
         stage('Test') {
             steps {
-                echo 'Running tests...'
+                echo '🧪 Running tests...'
             }
         }
-
         stage('Deploy') {
             steps {
-                echo 'Deploying...'
+                echo '🚀 Deploying to production...'
             }
         }
     }
